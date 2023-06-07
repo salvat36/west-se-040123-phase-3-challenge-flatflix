@@ -21,7 +21,7 @@ class Movie:
         return [review for review in Review.all if review.movie == self]
     
     def reviewers(self):
-        return list([review for review in self.reviews() if review.movie])
+        return list([review.viewer for review in self.reviews() if review.movie == self])
     
     def average_rating(self):
         pass
@@ -32,3 +32,4 @@ class Movie:
     
 from classes.review import Review
 from classes.viewer import Viewer
+from statistics import mean
