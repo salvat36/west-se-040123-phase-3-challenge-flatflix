@@ -23,8 +23,10 @@ class Viewer:
     def reviewed_movies(self):
         return [review.movie for review in self.reviews() if review.viewer == self]
 
+#if there is a Review instance that has this Viewer and Movie
     def has_reviewed_movie(self, movie):
-        pass
+        if self.movie == movie.review:
+            return True
 
 from classes.review import Review
 from classes.movie import Movie

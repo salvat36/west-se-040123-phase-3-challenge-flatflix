@@ -24,7 +24,7 @@ class Movie:
         return list([review.viewer for review in self.reviews() if review.movie == self])
     
     def average_rating(self):
-        pass
+        return mean([review.rating for review in self.reviews()])
     
     @classmethod
     def highest_rated(cls):
