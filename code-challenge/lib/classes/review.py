@@ -17,7 +17,7 @@ class Review:
         if isinstance(rating, int) and 1<= rating <=5:
             self._rating = rating
         else:
-            raise AttributeError("Must be of type string and between 1-5 characters")
+            raise AttributeError("Must be a number between 1-5 characters")
     
     @property
     def viewer(self):

@@ -15,7 +15,7 @@ class Movie:
         if isinstance(title, str) and len(title) > 0:
             self._title = title
         else:
-            raise AttributeError("Must be of type string and 1--5 characters")   
+            raise AttributeError("Must be of type string and at least 1 character")   
     
     def reviews(self):
         return [review for review in Review.all if review.movie == self]
