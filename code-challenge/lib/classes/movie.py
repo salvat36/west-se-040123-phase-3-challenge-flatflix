@@ -28,7 +28,7 @@ class Movie:
     
     @classmethod
     def highest_rated(cls):
-        pass
+        return max(cls.all, key=lambda el: el.average_rating())
     
 from classes.review import Review
 from classes.viewer import Viewer
