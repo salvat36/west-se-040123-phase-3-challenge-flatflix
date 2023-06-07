@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-import ipdb
+# import ipdb
 from classes.movie import Movie
 from classes.review import Review
 from classes.viewer import Viewer
@@ -36,11 +36,11 @@ review_5 = Review(movie=movie_3, viewer=viewer_4, rating=2)
 # print(review_5.rating == 1) #=> Should return True given the seeding above
 # print(review_1.movie == movie_1) #=> Should return True given the seeding above
 # print(review_1.viewer == viewer_1) #=> Should return True given the seeding above
-# Review(movie='test', viewer='matteo', rating=4) #=> Should raise exception and please comment it out once verified!
-# Review(movie=movie_1, viewer=viewer_1, rating=6) #=> Should raise exception and please comment it out once verified!
+# # Review(movie='test', viewer='matteo', rating=4) #=> Should raise exception and please comment it out once verified!
+# # Review(movie=movie_1, viewer=viewer_1, rating=6) #=> Should raise exception and please comment it out once verified!
 
-# #===============================================================================
-# #! Testing Movie class properties and attributes
+#===============================================================================
+#! Testing Movie class properties and attributes
 # print("Testing Movie class properties and attributes")
 # print("If correct, you should see three Trues and one exception")
 # print(Movie.all == [movie_1, movie_2, movie_3]) #=> Should return True given the seeding above
@@ -60,7 +60,7 @@ review_5 = Review(movie=movie_3, viewer=viewer_4, rating=2)
 # print(movie_1.average_rating() == 4) #=> Should return True given the seeding above
 # print(Movie.highest_rated() == movie_1) #=> Should return True given the seeding above
 
-# #===============================================================================
+#===============================================================================
 
 # #! Testing the Viewer class properties and attributes
 # print("Testing Viewer class properties and attributes")
@@ -76,11 +76,11 @@ review_5 = Review(movie=movie_3, viewer=viewer_4, rating=2)
 # print(viewer_2.reviews() == [review_2, review_3]) #=> Should return True given the seeding above
 # print(viewer_2.reviewed_movies() == [movie_1, movie_1]) #=> Should return True given the seeding above as uniqueness is not required
 
-# #! Testing Viewer class aggregate methods
-# print("Testing Viewer class aggregate methods")
-# print("If correct, you should see two Trues")
-# print(viewer_2.has_reviewed_movie(movie_1) == True) #=> Should return True given the seeding above
-# print(viewer_2.has_reviewed_movie(movie_2) == False) #=> Should return True given the seeding above
+#! Testing Viewer class aggregate methods
+print("Testing Viewer class aggregate methods")
+print("If correct, you should see two Trues")
+print(viewer_2.has_reviewed_movie(movie_1) == True) #=> Should return True given the seeding above
+print(viewer_2.has_reviewed_movie(movie_2) == False) #=> Should return True given the seeding above
 
 
 
@@ -90,4 +90,4 @@ if __name__ == '__main__':
 #  WRITE YOUR TEST CODE HERE ###
 # DO NOT REMOVE THIS
     print("uncomment ipdb lines if you want to use them")
-ipdb.set_trace()
+    # ipdb.set_trace()

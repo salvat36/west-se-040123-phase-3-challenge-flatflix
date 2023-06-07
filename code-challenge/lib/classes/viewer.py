@@ -32,6 +32,8 @@ class Viewer:
     def has_reviewed_movie(self, movie):
         if movie in self.reviewed_movies():
             return True
+        else:
+            return False
         
 
 from classes.review import Review
